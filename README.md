@@ -24,3 +24,7 @@ The reason for iTerm2 is that the base macOS terminal only supports 8-bit colors
 - NvChad
 Using NvChad for now to help give me a good base and turn Neovim into a full IDE. As I get more comfortable, I will start to know which plugins I need and which ones work for me. So far the UI plugins seem to suffice and already make using Neovim a pleasant expereince.
 - Theme: `bearded-arc`
+
+## Pictures
+<img width="682" alt="image" src="https://user-images.githubusercontent.com/19742642/233804378-3b7a5502-8fcd-4e2b-928c-ded92c2a4602.png">
+<img width="682" alt="image" src="https://user-images.githubusercontent.com/19742642/233804405-9a4bc173-9cfb-4fc5-934d-c706831b1942.png">
