@@ -13,7 +13,8 @@ VSCode does feel like a text editor optimized for writing Web and Python applica
 Among the tools I use are:
 * MacOS
     * iTerm2
-The reason for iTerm2 is that the base macOS terminal only supports 8-bit colors, so all the colors and themes that come with NvChad come out to be messed up.
+The reason for iTerm2 is that the native macOS terminal only supports 8-bit colors, so all the colors and themes that come with NvChad come out messed up.
+    * Fig
 * Windows
     * Terminal (Microsoft)
     * Ubuntu WSL
