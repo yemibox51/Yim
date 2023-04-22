@@ -4,7 +4,7 @@ This repository is collection of my Neovim file configs so it's easier for me to
 ## Motivation
 > Keep in mind this is my personal opinion and I am not a tool elitist. As long as you personally don't have to fight your tools and get actual work done, use whatever you want.
 
-I decided to take my vim journey more seriously after realizing how slow I was moving with other IDEs such as Visual Studio and Xcode. Don't get me wrong, I have nothing against these IDEs, they are very sufisticated and if you know what you are doing, you can be very fast in them. 
+I decided to take my vim journey more seriously after realizing how slow I was moving with other IDEs such as Visual Studio and Xcode. Don't get me wrong, I have nothing against these IDEs, they are very sophisticated and if you know what you are doing, you can be very fast in them. 
 
 One tool that I am on the fence about is VSCode. I want to love it and master it but sometimes it either feels like too much or too little. Idk if anyone has faced this but when using the formatters, it sometimes tries to use the Prettier formatter (`Javascript ES6`) when I am writing C/C++ code (should be using `clang`). There is definitely a fix this and this is a nitpicky complaint.
 
