@@ -10,6 +10,8 @@ One tool that I am on the fence about is VSCode. I want to love it and master it
 
 VSCode does feel like a text editor optimized for writing Web and Python applications, but seems to fall short for other environments where system languages like C, C++, and Rust are used.
 
+I just want to feel fast and have minimal UI get in the way of what I am doing. Also sometimes reaching for the mouse can be distracting.
+
 ## Tools
 Among the tools I use are:
 * MacOS
