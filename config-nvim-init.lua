@@ -1,0 +1,1 @@
+/Users/yemiagesin/.config/nvim/init.lua
