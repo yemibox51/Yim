@@ -10,5 +10,6 @@ mkdir -p ~/.config/nvim && touch ~/.config/nvim/init.lua
 ```
 
 ## Pictures
-<img width="682" alt="image" src="https://user-images.githubusercontent.com/19742642/233804378-3b7a5502-8fcd-4e2b-928c-ded92c2a4602.png">
-<img width="682" alt="image" src="https://user-images.githubusercontent.com/19742642/233804405-9a4bc173-9cfb-4fc5-934d-c706831b1942.png">
+![image](https://github.com/yemibox51/Yim/assets/19742642/5876439d-e1c4-4e42-a6af-3ac5357f030c)
+
+![image](https://github.com/yemibox51/Yim/assets/19742642/da990bea-82c7-49a5-81bb-61b2b6c6edfa)
