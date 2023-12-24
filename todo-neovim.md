@@ -1,0 +1,4 @@
+- [X] Try telescope ui
+- [ ] Auto-completion
+- [ ] Code Snippets
+- [ ] Auto-formatting
