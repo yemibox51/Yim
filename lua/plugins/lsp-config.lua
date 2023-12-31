@@ -9,7 +9,12 @@ return {
 		"williamboman/mason-lspconfig.nvim",
 		config = function()
 			require("mason-lspconfig").setup({
-				ensure_installed = {"lua_ls", "tsserver", "pyright"}
+				ensure_installed = {
+					"lua_ls",
+					"tsserver",
+					"pyright",
+					"omnisharp"
+				}
 			})
 		end
 	},
@@ -22,6 +27,10 @@ return {
 			lspconfig.lua_ls.setup({})
 			lspconfig.pyright.setup({})
 			lspconfig.tsserver.setup({})
+			lspconfig.omnisharp.setup({
+				cmd = {"dotnet", "/Users/yemiagesin/omnisharp/OmniSharp.dll"},
+				use_mono = true
+			})
 
 			-- Keymaps --
 			vim.keymap.set('n', 'gD', vim.lsp.buf.declaration, {})
