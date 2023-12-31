@@ -2,6 +2,10 @@
 This repository is collection of my Neovim file configs so it's easier for me to to switch editors and computers.
 
 ```bash
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+
+```bash
 brew install neovim
 brew install ripgrep
 brew install node
