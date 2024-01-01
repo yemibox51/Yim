@@ -21,15 +21,24 @@ return {
 	{
 		"neovim/nvim-lspconfig",
 		config = function()
+            local capabilities = require("cmp_nvim_lsp").default_capabilities()
+
 			local lspconfig = require("lspconfig")
 
 			-- Language Servers --
-			lspconfig.lua_ls.setup({})
-			lspconfig.pyright.setup({})
-			lspconfig.tsserver.setup({})
+			lspconfig.lua_ls.setup({
+                capabilities = capabilities,
+            })
+			lspconfig.pyright.setup({
+                capabilities = capabilities,
+            })
+			lspconfig.tsserver.setup({
+                capabilities = capabilities,
+            })
 			lspconfig.omnisharp.setup({
 				cmd = {"dotnet", "/Users/yemiagesin/omnisharp/OmniSharp.dll"},
-				use_mono = true
+				use_mono = true,
+                capabilities = capabilities,
 			})
 
 			-- Keymaps --
