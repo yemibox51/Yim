@@ -20,3 +20,5 @@ Will have to manually `:MasonInstall <debug_adapter>`
 ![image](https://github.com/yemibox51/Yim/assets/19742642/3a0a1fa4-67a8-45ca-a498-19a9871e0e2d)
 
 ![image](https://github.com/yemibox51/Yim/assets/19742642/5876439d-e1c4-4e42-a6af-3ac5357f030c)
+
+![image](https://github.com/yemibox51/Yim/assets/19742642/d28738a1-934c-4393-8460-643abf43ca13)
