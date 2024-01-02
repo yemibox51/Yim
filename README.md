@@ -6,7 +6,7 @@ This repository is collection of my Neovim file configs so it's easier for me to
 ```
 
 ```bash
-brew install neovim
+brew install neovim # >= 0.9.4
 brew install ripgrep
 brew install node
 
