@@ -13,6 +13,9 @@ brew install node
 mkdir -p ~/.config/nvim && touch ~/.config/nvim/init.lua
 ```
 
+## Debugger
+Will have to manually `:MasonInstall <debug_adapter>`
+
 ## Pictures
 ![image](https://github.com/yemibox51/Yim/assets/19742642/3a0a1fa4-67a8-45ca-a498-19a9871e0e2d)
 
