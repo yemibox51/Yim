@@ -36,6 +36,8 @@ return {
             vim.keymap.set('n', '<F10>', function() require('dap').step_over() end)
             vim.keymap.set('n', '<F11>', function() require('dap').step_into() end)
             vim.keymap.set('n', '<F12>', function() require('dap').step_out() end)
+            vim.keymap.set('n', '<Leader>t', function() require('dap').terminate() end)
+            vim.keymap.set('n', '<Leader>r', function() require('dap').restart() end)
             vim.keymap.set('n', '<Leader>b', function() require('dap').toggle_breakpoint() end)
             vim.keymap.set('n', '<Leader>B', function() require('dap').set_breakpoint() end)
             vim.keymap.set('n', '<Leader>lp', function() require('dap').set_breakpoint(nil, nil, vim.fn.input('Log point message: ')) end)
