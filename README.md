@@ -1,10 +1,12 @@
 # Yim
 This repository is collection of my Neovim file configs so it's easier for me to to switch editors and computers.
 
+Homebrew Installation:
 ```bash
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
+Requirements Installation:
 ```bash
 brew install neovim # >= 0.9.4
 brew install ripgrep
