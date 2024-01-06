@@ -3,6 +3,7 @@ return {
         "hrsh7th/cmp-nvim-lsp"
     },
     {
+        -- Snippets --
         "L3MON4D3/LuaSnip",
         dependencies = {
             "saadparwaiz1/cmp_luasnip",
@@ -37,9 +38,8 @@ return {
         sources = cmp.config.sources({
           -- { name = 'nvim_lsp' },
           { name = 'luasnip' }, -- For luasnip users.
-        }, {
           { name = 'buffer' },
-        })
+        }) 
       })
     end,
     }
