@@ -1,12 +1,13 @@
 # Yim
-This repository is collection of my Neovim file configs so it's easier for me to to switch editors and computers.
+This repository is a collection of my Neovim file configs so it's easier for me to to switch editors and computers.
 
-Homebrew Installation:
+## Homebrew Installation:
 ```bash
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
-Requirements Installation:
+## Requirements Installation:
+### MacOS
 ```bash
 brew install neovim # >= 0.9.4
 brew install ripgrep
@@ -14,6 +15,26 @@ brew install node
 
 mkdir -p ~/.config/nvim && touch ~/.config/nvim/init.lua
 ```
+### Linux/WSL
+```bash
+sudo apt-get ripgrep
+curl -OL https://github.com/neovim/neovim/releases/download/v0.9.5/nvim-linux64.tar.gz
+tar xvf nvim-linux64.tar.gz
+sudo mv nvim-linux64 /usr/local/bin/nvim
+```
+
+Installing node
+```bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
+# write in .zshrc
+ export NVM_DIR=~/.nvm
+   [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
+alias nvim=/usr/local/bin/nvim/bin/nvim
+
+nvm install node
+```
+
+Finally, to use nvim
 
 ## Debugger
 Will have to manually `:MasonInstall <debug_adapter>`
