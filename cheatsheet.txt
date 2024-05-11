@@ -28,3 +28,6 @@ Center Scopes | <Leader>ds
 ## Telescope
 Live Grep | <Leader>fg
 Find Files | <C-p>
+
+## Symbols-Outline
+View Outline | <Leader>o
