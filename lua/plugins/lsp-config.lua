@@ -13,7 +13,6 @@ return {
 					"lua_ls",
 					"tsserver",
 					"pyright",
-					"omnisharp"
 				}
 			})
 		end
@@ -35,11 +34,13 @@ return {
 			lspconfig.tsserver.setup({
                 capabilities = capabilities,
             })
-			lspconfig.omnisharp.setup({
-				cmd = {"dotnet", "/Users/yemiagesin/omnisharp/OmniSharp.dll"},
-				use_mono = true,
-                capabilities = capabilities,
-			})
+
+            -- Godot --
+            if lspconfig.gdscript then
+                lspconfig.gdscript.setup({
+                    capabilities = capabilities,
+                })
+            end
 
 			-- Keymaps --
 			vim.keymap.set('n', 'gD', vim.lsp.buf.declaration, {})

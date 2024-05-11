@@ -1,0 +1,30 @@
+## Lsp-Config @IDE
+Go to Declaration | gD
+Go to Definition | gd
+Hover | K
+Go to Implementation | gi
+Code action | <space>ca
+Go to Reference(s) | gr
+
+## Debug-Adapters @Debug
+Toggle Breakpoint | <F9>
+Set Breakpoints | <Leader>b
+Set Breakpoint and Log message | <Leader>lp
+Continue | <F5>
+Step Over | <F10>
+Step Into | <F11>
+Step Out | <F12>
+Terminate | <Leader>t
+Restart | <Leader>r
+Open repl | <Leader>dr
+Run last config | <Leader>dl
+
+## Debug-Adapters-UI-Widgets @Debug
+Hover | <Leader>dh
+Preview | <Leader>dp
+Center Frames | <Leader>df
+Center Scopes | <Leader>ds
+
+## Telescope
+Live Grep | <Leader>fg
+Find Files | <C-p>

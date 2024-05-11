@@ -19,6 +19,23 @@ return {
                 dapui.close()
             end
 
+            -- Adapters --
+            dap.adapters.godot = {
+                type = 'server',
+                host = '127.0.0.1',
+                port = 6006,
+            }
+
+            -- Configurations --
+            dap.configurations.gdscript = {
+              {
+                type = "godot",
+                request = "launch",
+                name = "Launch scene",
+                project = "${workspaceFolder}",
+              }
+            }
+
             -- Keymaps from :help dap-mappings --
             vim.keymap.set('n', '<F5>', function() dap.continue() end)
             vim.keymap.set('n', '<F10>', function() dap.step_over() end)
