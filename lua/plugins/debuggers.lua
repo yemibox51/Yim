@@ -48,6 +48,44 @@ return {
             vim.keymap.set('n', '<Leader>lp', function() dap.set_breakpoint(nil, nil, vim.fn.input('Log point message: ')) end)
             vim.keymap.set('n', '<Leader>dr', function() dap.repl.open() end)
             vim.keymap.set('n', '<Leader>dl', function() dap.run_last() end)
+        end,
+    },
+    {
+        "mfussenegger/nvim-dap-python",
+        ft = "python",
+        dependencies = {
+            "mfussenegger/nvim-dap",
+            "rcarriga/nvim-dap-ui",
+        },
+        config = function()
+            local path = "~/.local/share/nvim/mason/packages/debugpy/venv/bin/python3"
+            require("dap-python").setup(path)
+						require('dap').configurations.python = {
+                  {
+                    type = 'python';
+                    request = 'launch';
+                    name = "Launch file";
+                    program = "${file}";
+                    pythonPath = function()
+                      return '/Users/yemi.agesin/.pyenv/shims/python3'
+                    end;
+                  },
+            }
+
+
+           -- Keymaps from :help dap-mappings --
+            vim.keymap.set('n', '<F5>', function() require('dap').continue() end)
+            vim.keymap.set('n', '<F10>', function() require('dap').step_over() end)
+            vim.keymap.set('n', '<F11>', function() require('dap').step_into() end)
+            vim.keymap.set('n', '<F12>', function() require('dap').step_out() end)
+            vim.keymap.set('n', '<Leader>t', function() require('dap').terminate() end)
+            vim.keymap.set('n', '<Leader>r', function() require('dap').restart() end)
+            vim.keymap.set('n', '<F9>', function() require('dap').toggle_breakpoint() end)
+            vim.keymap.set('n', '<Leader>b', function() require('dap').set_breakpoint() end)
+            vim.keymap.set('n', '<Leader>B', function() require('dap').clear_breakpoints() end)
+            vim.keymap.set('n', '<Leader>lp', function() require('dap').set_breakpoint(nil, nil, vim.fn.input('Log point message: ')) end)
+            vim.keymap.set('n', '<Leader>dr', function() require('dap').repl.open() end)
+            vim.keymap.set('n', '<Leader>dl', function() require('dap').run_last() end)
             vim.keymap.set({'n', 'v'}, '<Leader>dh', function()
               require('dap.ui.widgets').hover()
             end)
@@ -65,16 +103,4 @@ return {
 
         end,
     },
-    {
-        "mfussenegger/nvim-dap-python",
-        ft = "python",
-        dependencies = {
-            "mfussenegger/nvim-dap",
-            "rcarriga/nvim-dap-ui",
-        },
-        config = function()
-            local path = "~/.local/share/nvim/mason/packages/debugpy/venv/bin/python"
-            require("dap-python").setup(path)
-        end,
-    }
 }
