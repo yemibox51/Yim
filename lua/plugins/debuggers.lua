@@ -25,6 +25,16 @@ return {
                 host = '127.0.0.1',
                 port = 6006,
             }
+            dap.adapters.delve = { -- Go debugger
+              type = 'server',
+              port = '${port}',
+              executable = {
+                command = 'dlv',
+                args = {'dap', '-l', '127.0.0.1:${port}'},
+                -- add this if on windows, otherwise server won't open successfully
+                -- detached = false
+              }
+            }
 
             -- Configurations --
             dap.configurations.gdscript = {
@@ -33,6 +43,29 @@ return {
                 request = "launch",
                 name = "Launch scene",
                 project = "${workspaceFolder}",
+              }
+            }
+            dap.configurations.go = {
+              {
+                type = "delve",
+                name = "Debug",
+                request = "launch",
+                program = "${file}"
+              },
+              {
+                type = "delve",
+                name = "Debug test", -- configuration for debugging test files
+                request = "launch",
+                mode = "test",
+                program = "${file}"
+              },
+              -- works with go.mod packages and sub packages 
+              {
+                type = "delve",
+                name = "Debug test (go.mod)",
+                request = "launch",
+                mode = "test",
+                program = "./${relativeFileDirname}"
               }
             }
 
@@ -44,10 +77,12 @@ return {
             vim.keymap.set('n', '<Leader>t', function() dap.terminate() end)
             vim.keymap.set('n', '<Leader>r', function() dap.restart() end)
             vim.keymap.set('n', '<F9>', function() dap.toggle_breakpoint() end)
+            vim.keymap.set('n', '<Leader>cb', function() dap.clear_breakpoints() end)
             vim.keymap.set('n', '<Leader>b', function() dap.set_breakpoint() end)
             vim.keymap.set('n', '<Leader>lp', function() dap.set_breakpoint(nil, nil, vim.fn.input('Log point message: ')) end)
             vim.keymap.set('n', '<Leader>dr', function() dap.repl.open() end)
             vim.keymap.set('n', '<Leader>dl', function() dap.run_last() end)
+            vim.keymap.set('n', '<Leader>gb', function() dap.run_to_cursor() end)
         end,
     },
     {
@@ -100,7 +135,6 @@ return {
               local widgets = require('dap.ui.widgets')
               widgets.centered_float(widgets.scopes)
             end)
-
         end,
     },
 }

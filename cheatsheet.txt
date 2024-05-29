@@ -8,6 +8,7 @@ Go to Reference(s) | gr
 
 ## Debug-Adapters @Debug
 Toggle Breakpoint | <F9>
+Clear Breakpoints | <Leader>cb
 Set Breakpoints | <Leader>b
 Set Breakpoint and Log message | <Leader>lp
 Continue | <F5>
@@ -18,6 +19,7 @@ Terminate | <Leader>t
 Restart | <Leader>r
 Open repl | <Leader>dr
 Run last config | <Leader>dl
+Run to cursor | <Leader>gb
 
 ## Debug-Adapters-UI-Widgets @Debug
 Hover | <Leader>dh
