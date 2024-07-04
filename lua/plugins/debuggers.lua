@@ -25,7 +25,7 @@ return {
                 host = '127.0.0.1',
                 port = 6006,
             }
-            dap.adapters.delve = { -- Go debugger
+            dap.adapters.delve = { -- Go
               type = 'server',
               port = '${port}',
               executable = {
@@ -33,6 +33,15 @@ return {
                 args = {'dap', '-l', '127.0.0.1:${port}'},
                 -- add this if on windows, otherwise server won't open successfully
                 -- detached = false
+              }
+            }
+            dap.adapters.codelldb = { -- C , C++, Rust
+              type = 'server',
+              port = "${port}",
+              executable = {
+                -- Change this
+                command = '/Users/yemiagesin/codelldb/extension/adapter/codelldb',
+                args = {"--port", "${port}"},
               }
             }
 
@@ -68,9 +77,23 @@ return {
                 program = "./${relativeFileDirname}"
               }
             }
+            dap.configurations.cpp = {
+              {
+                name = "Launch file",
+                type = "lldb",
+                request = "launch",
+                program = function()
+                  return vim.fn.input('Path to executable: ', vim.fn.getcwd() .. '/', 'file')
+                end,
+                cwd = '${workspaceFolder}',
+                stopOnEntry = false,
+              },
+            }
+            dap.configurations.c = dap.configurations.cpp
+            dap.configurations.rust = dap.configurations.cpp
 
-            -- Keymaps from :help dap-mappings --
-            vim.keymap.set('n', '<F5>', function() dap.continue() end)
+                -- Keymaps from :help dap-mappings --
+                vim.keymap.set('n', '<F5>', function() dap.continue() end)
             vim.keymap.set('n', '<F10>', function() dap.step_over() end)
             vim.keymap.set('n', '<F11>', function() dap.step_into() end)
             vim.keymap.set('n', '<F12>', function() dap.step_out() end)
