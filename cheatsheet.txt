@@ -41,3 +41,9 @@ Comment end of line | gcA
 
 ## Formatter
 Format page | <Leader>gf
+
+## Tabs
+New Tab | <Leader>T
+
+## LazyGit
+Open Lazygit | <Leader>lg

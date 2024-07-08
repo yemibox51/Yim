@@ -22,6 +22,9 @@ vim.keymap.set({'n', 'v'}, '<leader>D', '"+D', {}) -- Cut Line
 vim.keymap.set('n', '<leader>f', ':.,', {}) -- Replace to $/n in File
 vim.keymap.set('n', '<leader>F', ':%s/', {}) -- Replace All in File
 
+-- Tabs --
+vim.keymap.set('n', '<leader>T', ':tabnew<CR>', {})
+
 -- Connect to Godot --
 local gdproject = io.open(vim.fn.getcwd().."/project.godot", "r")
 if gdproject then
