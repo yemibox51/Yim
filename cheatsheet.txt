@@ -33,3 +33,11 @@ Find Files | <C-p>
 
 ## Symbols-Outline
 View Outline | <Leader>o
+
+## Comment
+Comment line | gcc
+Block Comment | gb
+Comment end of line | gcA
+
+## Formatter
+Format page | <Leader>gf
