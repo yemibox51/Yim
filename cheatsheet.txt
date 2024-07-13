@@ -40,7 +40,7 @@ Block Comment | gb
 Comment end of line | gcA
 
 ## Formatter
-Format page | <Leader>gf
+Format page | <Leader>gF
 
 ## Tabs
 New Tab | <Leader>T
