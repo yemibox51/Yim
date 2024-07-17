@@ -36,15 +36,15 @@ return {
                 capabilities = capabilities,
             })
 
-      -- Godot --
-      if lspconfig.gdscript then
-         lspconfig.gdscript.setup({
-						capabilities = capabilities,
-				})
-		  end
-	  	lspconfig.gopls.setup({
-								capabilities = capabilities,
-		  })
+              -- Godot --
+            if lspconfig.gdscript then
+                lspconfig.gdscript.setup({
+                capabilities = capabilities,
+             })
+            end
+            lspconfig.gopls.setup({
+                capabilities = capabilities,
+            })
 
 			-- Keymaps --
 			vim.keymap.set('n', 'gD', vim.lsp.buf.declaration, {})

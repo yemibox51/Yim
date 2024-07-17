@@ -47,3 +47,8 @@ New Tab | <Leader>T
 
 ## LazyGit
 Open Lazygit | <Leader>lg
+
+## SnipRun
+Snip Run (Visual) | f 
+Snip Run Operator | <leader>f 
+Snip Run | <leader>ff 

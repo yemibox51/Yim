@@ -14,6 +14,8 @@ brew install ripgrep
 brew install node
 
 mkdir -p ~/.config/nvim && touch ~/.config/nvim/init.lua
+
+curl https://sh.rustup.rs -sSf | sh # Install Rust and Cargo
 ```
 ### Linux/WSL
 ```bash
@@ -21,6 +23,8 @@ sudo apt-get ripgrep
 curl -OL https://github.com/neovim/neovim/releases/download/v0.9.5/nvim-linux64.tar.gz
 tar xvf nvim-linux64.tar.gz
 sudo mv nvim-linux64 /usr/local/bin/nvim
+
+curl https://sh.rustup.rs -sSf | sh # Install Rust and Cargo
 ```
 
 Installing node
