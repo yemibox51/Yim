@@ -44,6 +44,8 @@ Format page | <Leader>gF
 
 ## Tabs
 New Tab | <Leader>T
+Next Tab | <Tab>
+Previous Tab | <S-Tab>
 
 ## LazyGit
 Open Lazygit | <Leader>lg
