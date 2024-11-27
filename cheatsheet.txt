@@ -3,8 +3,10 @@ Go to Declaration | gD
 Go to Definition | gd
 Hover | K
 Go to Implementation | gi
-Code action | <space>ca
+Code action | <leader>ca
 Go to Reference(s) | gr
+Rename Symbol | gR
+View Diagnostic | <leader>q
 
 ## Debug-Adapters @Debug
 Toggle Breakpoint | <F9>
