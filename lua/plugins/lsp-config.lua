@@ -62,6 +62,7 @@ return {
             vim.keymap.set('n', 'gr', vim.lsp.buf.references, {})
             vim.keymap.set('n', 'gR', vim.lsp.buf.rename, {})
             vim.keymap.set('n', '<leader>q', vim.diagnostic.open_float, {})
+            vim.keymap.set('n', '<leader>Q', vim.diagnostic.goto_next, {})
         end
     },
     {

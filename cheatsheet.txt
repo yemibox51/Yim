@@ -7,6 +7,7 @@ Code action | <leader>ca
 Go to Reference(s) | gr
 Rename Symbol | gR
 View Diagnostic | <leader>q
+Jump to Next Diagnostic | <leader>Q
 
 ## Debug-Adapters @Debug
 Toggle Breakpoint | <F9>
