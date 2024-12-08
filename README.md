@@ -6,6 +6,12 @@ This repository is a collection of my Neovim file configs so it's easier for me 
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
+## Scoop Installation:
+```powershell
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+Invoke-RestMethod -Uri https://get.scoop.sh | Invoke-Expression
+```
+
 ## Requirements Installation:
 ### MacOS
 ```bash
@@ -37,6 +43,24 @@ alias nvim=/usr/local/bin/nvim/bin/nvim
 
 nvm install node
 ```
+
+### Windows
+```cmd
+REM get ls to be dir
+echo @dir %* > %systemroot%\system32\ls.bat
+
+REM alias open for ii (Invoke-Item)
+Set-Alias -Name open -Value Invoke-Item
+
+REM This is where you would install the config
+mkdir ~\Appdata\Local\nvim
+```
+
+Setup GCC windows with instructions [here](https://cpp-lang.net/tools/standalone/compilers/setup-gcc-windows/).
+Make sure to add to the path.
+
+#### Customization
+To make windows terminal look better, use Oh-my-pop
 
 Finally, to use nvim
 
