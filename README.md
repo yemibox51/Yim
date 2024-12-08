@@ -59,6 +59,15 @@ mkdir ~\Appdata\Local\nvim
 Setup GCC windows with instructions [here](https://cpp-lang.net/tools/standalone/compilers/setup-gcc-windows/).
 Make sure to add to the path.
 
+Install Grep for Telescope
+```cmd
+REM scoop installation
+scoop install ripgrep
+
+REM Winget installation
+winget install BurntSushi.ripgrep.MSVC
+```
+
 #### Customization
 To make windows terminal look better, use Oh-my-pop
 
