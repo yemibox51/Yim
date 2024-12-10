@@ -1,0 +1,34 @@
+This is my *note*!
+
+A list:
+- Nice
+- Organge
+
+- Milk
+
+An ordered list:
+~ First Thing
+~ Second Thing
+~ New Thing
+~ Third Thing
+
+- ( ) Undone
+- (-) Doing
+- (x) Read neorg setup
+- (=) On hold
+- (_) Cancelled
+- (!) Urgent
+- (?) Ambiguous (uncertain)
+- (+) Recurring (happens every so often)
+
+* Nice
+** ( ) New shooping list
+
+* Shopping
+** Important Shopping
+   This is stuff I must immediately buy:
+   - Bread
+** Other Stuff
+   This is not as important:
+   - Milk
+   - Tomatoes (yum)
