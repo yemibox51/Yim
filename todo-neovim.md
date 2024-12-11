@@ -11,4 +11,4 @@
 - Lunar Plugins
 - [List of awesome Neovim plugins](https://github.com/rockerBOO/awesome-neovim)
 - Obsidian Plugin
-- Neoorg Plugin
+- Oil file explorer

@@ -30,5 +30,19 @@ An ordered list:
    - Bread
 ** Other Stuff
    This is not as important:
+   {# Important Shopping}
+   {* Nice}[Nice] 
    - Milk
    - Tomatoes (yum)
+** More stuff
+   Stuff is going on
+   $f(x)=y$
+   &variable&
+   ___
+   Line break
+   {:/lua/neorg.lua:} hit Return to go to the file, it will create the file if it doesn't exist
+   [Shopping Anchor]{# Shopping}
+
+
+   This also refers to the [Shopping Anchor]
+
