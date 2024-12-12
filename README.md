@@ -23,11 +23,6 @@ mkdir -p ~/.config/nvim && touch ~/.config/nvim/init.lua
 
 curl https://sh.rustup.rs -sSf | sh # Install Rust and Cargo
 ```
-To ensure neorg treesitter compiles
-```bash
-brew install llvm
-CC=/opt/homebrew/opt/llvm/bin/clang nvim -c 'TSInstallSync norg'
-```
 
 ### Linux/WSL
 ```bash

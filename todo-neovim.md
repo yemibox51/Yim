@@ -10,5 +10,14 @@
 - NVChad Plugins
 - Lunar Plugins
 - [List of awesome Neovim plugins](https://github.com/rockerBOO/awesome-neovim)
+- Neorg Plugin
 - Obsidian Plugin
 - Oil file explorer
+- List of more plugins [neovimcraft](https://neovimcraft.com/)
+
+## Known issues
+To ensure neorg treesitter compiles
+```bash
+brew install llvm
+CC=/opt/homebrew/opt/llvm/bin/clang nvim -c 'TSInstallSync norg'
+```

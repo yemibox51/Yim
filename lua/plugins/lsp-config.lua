@@ -11,7 +11,6 @@ return {
             require("mason-lspconfig").setup({
                 ensure_installed = {
                     "lua_ls",
-                    "tsserver",
                     "pyright",
                     "gopls",
                 }
@@ -32,7 +31,7 @@ return {
             lspconfig.pyright.setup({
                 capabilities = capabilities,
             })
-            lspconfig.tsserver.setup({
+            lspconfig.ts_ls.setup({
                 capabilities = capabilities,
             })
 
@@ -47,8 +46,8 @@ return {
             })
 
             -- Protobuf --
-            if lspconfig.bufls then
-                lspconfig.bufls.setup({
+            if lspconfig.buf_ls then
+                lspconfig.buf_ls.setup({
                     capabilities = capabilities
                 })
             end

@@ -57,3 +57,6 @@ Open Lazygit | <Leader>lg
 Snip Run (Visual) | f 
 Snip Run Operator | <leader>f 
 Snip Run | <leader>ff 
+
+## Which-Key
+Open Which Key | <leader>.
