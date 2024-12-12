@@ -15,7 +15,7 @@ Invoke-RestMethod -Uri https://get.scoop.sh | Invoke-Expression
 ## Requirements Installation:
 ### MacOS
 ```bash
-brew install neovim # >= 0.9.4
+brew install neovim # >= 0.10.0
 brew install ripgrep
 brew install node
 
