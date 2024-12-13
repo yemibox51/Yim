@@ -57,6 +57,8 @@ REM This is where you would install the config
 mkdir ~\Appdata\Local\nvim
 ```
 
+Install Lua for windows [here](https://github.com/rjpcomputing/luaforwindows)
+
 Setup GCC windows with instructions [here](https://cpp-lang.net/tools/standalone/compilers/setup-gcc-windows/).
 Make sure to add to the path.
 

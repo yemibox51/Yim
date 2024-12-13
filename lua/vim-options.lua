@@ -27,6 +27,8 @@ vim.keymap.set('n', '<leader>T', ':tabnew<CR>', {})
 vim.api.nvim_set_keymap('n', '<Tab>', ':tabnext<CR>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<S-Tab>', ':tabprevious<CR>', { noremap = true, silent = true })
 
+-- Terminal --
+vim.keymap.set('t', '<Esc>', "<C-\\><C-n>", { noremap = true, silent = true })
 
 -- Connect to Godot --
 local gdproject = io.open(vim.fn.getcwd() .. "/project.godot", "r")
