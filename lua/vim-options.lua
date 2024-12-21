@@ -28,11 +28,14 @@ vim.api.nvim_set_keymap('n', '<Tab>', ':tabnext<CR>', { noremap = true, silent =
 vim.api.nvim_set_keymap('n', '<S-Tab>', ':tabprevious<CR>', { noremap = true, silent = true })
 
 -- Terminal --
-vim.keymap.set('t', '<Esc>', "<C-\\><C-n>", { noremap = true, silent = true })
+vim.keymap.set('t', '<C-w>', "<C-\\><C-n>", { noremap = true, silent = true })
+
+-- Telescope -- 
+vim.keymap.set('n', '<C-S-p>', ':TodoTelescope<CR>', {})
 
 -- Connect to Godot --
 local gdproject = io.open(vim.fn.getcwd() .. "/project.godot", "r")
-if gdproject ~= 1 then
+if gdproject then
     io.close(gdproject)
     if vim.fn.has 'win32' == 1 then
         vim.fn.serverstart("127.0.0.1:6004")

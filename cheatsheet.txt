@@ -10,16 +10,15 @@ View Diagnostic | <leader>q
 Jump to Next Diagnostic | <leader>Q
 
 ## Debug-Adapters @Debug
-Toggle Breakpoint | <F9>
+Toggle Breakpoint | <leader>b
 Clear Breakpoints | <Leader>cb
-Set Breakpoints | <Leader>b
 Set Breakpoint and Log message | <Leader>lp
-Continue | <F5>
-Step Over | <F10>
-Step Into | <F11>
-Step Out | <F12>
-Terminate | <Leader>t
-Restart | <Leader>r
+Continue | <leader>dc
+Step Over | <leader>so
+Step Into | <leader>si
+Step Out | <leader>sO
+Terminate | <Leader>td
+Restart | <Leader>rd
 Open repl | <Leader>dr
 Run last config | <Leader>dl
 Run to cursor | <Leader>gb
@@ -60,3 +59,6 @@ Snip Run | <leader>ff
 
 ## Which-Key
 Open Which Key | <leader>.
+
+## Todo-Commnets
+Open Todo Telescope | <C-S-p>

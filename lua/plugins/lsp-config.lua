@@ -12,7 +12,6 @@ return {
                 ensure_installed = {
                     "lua_ls",
                     "pyright",
-                    "gopls",
                 }
             })
         end
@@ -49,9 +48,11 @@ return {
             end
 
 
-            lspconfig.gopls.setup({
-                capabilities = capabilities,
-            })
+            if lspconfig.gopls then
+                lspconfig.gopls.setup({
+                    capabilities = capabilities,
+                })
+            end
 
             -- Protobuf --
             if lspconfig.buf_ls then
