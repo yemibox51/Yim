@@ -32,7 +32,11 @@ vim.keymap.set('t', '<Esc>', "<C-\\><C-n>", { noremap = true, silent = true })
 
 -- Connect to Godot --
 local gdproject = io.open(vim.fn.getcwd() .. "/project.godot", "r")
-if gdproject then
+if gdproject ~= 1 then
     io.close(gdproject)
-    vim.fn.serverstart("./godothost")
+    if vim.fn.has 'win32' == 1 then
+        vim.fn.serverstart("127.0.0.1:6004")
+    else
+        vim.fn.serverstart("./godothost")
+    end
 end

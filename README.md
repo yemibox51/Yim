@@ -70,6 +70,10 @@ scoop install ripgrep
 REM Winget installation
 winget install BurntSushi.ripgrep.MSVC
 ```
+For Settting up Networking:
+```cmd
+winget install nmap
+```
 
 #### Customization
 To make windows terminal look better, use Oh-my-pop
