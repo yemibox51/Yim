@@ -31,7 +31,7 @@ vim.api.nvim_set_keymap('n', '<S-Tab>', ':tabprevious<CR>', { noremap = true, si
 vim.keymap.set('t', '<C-w>', "<C-\\><C-n>", { noremap = true, silent = true })
 
 -- Telescope -- 
-vim.keymap.set('n', '<C-S-p>', ':TodoTelescope<CR>', {})
+vim.keymap.set('n', '<leader>tt', ':TodoTelescope<CR>', {})
 
 -- Connect to Godot --
 local gdproject = io.open(vim.fn.getcwd() .. "/project.godot", "r")

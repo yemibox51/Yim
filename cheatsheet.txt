@@ -61,4 +61,4 @@ Snip Run | <leader>ff
 Open Which Key | <leader>.
 
 ## Todo-Commnets
-Open Todo Telescope | <C-S-p>
+Open Todo Telescope | <leader>tt
