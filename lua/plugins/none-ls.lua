@@ -1,4 +1,5 @@
 return {
+    -- Linting/formatting plugin --
     "nvimtools/none-ls.nvim",
     config = function()
         local augroup = vim.api.nvim_create_augroup("LspFormatting", {})
@@ -9,6 +10,8 @@ return {
                 null_ls.builtins.formatting.csharpier,
                 null_ls.builtins.formatting.gdformat,
                 null_ls.builtins.formatting.prettier,
+                null_ls.builtins.formatting.gofumpt,
+                null_ls.builtins.diagnostics.golangci_lint,
             },
 
             -- Format on Save --
@@ -27,6 +30,6 @@ return {
             --     end
             -- end,
         })
-        vim.keymap.set('n', '<leader>gF', vim.lsp.buf.format, {});
+        vim.keymap.set('n', '<leader>f', vim.lsp.buf.format, {});
     end
 }

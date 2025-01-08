@@ -19,7 +19,7 @@ vim.keymap.set({ 'n', 'v' }, '<leader>d', '"+d', {}) -- Cut Cursor
 vim.keymap.set({ 'n', 'v' }, '<leader>D', '"+D', {}) -- Cut Line
 
 -- Find & Replace --
-vim.keymap.set('n', '<leader>f', ':.,', {})  -- Replace to $/n in File
+-- vim.keymap.set('n', '<leader>f', ':.,', {})  -- Replace to $/n in File
 vim.keymap.set('n', '<leader>F', ':%s/', {}) -- Replace All in File
 
 -- Tabs --

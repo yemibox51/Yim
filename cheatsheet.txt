@@ -42,7 +42,7 @@ Block Comment | gb
 Comment end of line | gcA
 
 ## Formatter
-Format page | <Leader>gF
+Format page | <Leader>f
 
 ## Tabs
 New Tab | <Leader>T
@@ -51,11 +51,6 @@ Previous Tab | <S-Tab>
 
 ## LazyGit
 Open Lazygit | <Leader>lg
-
-## SnipRun
-Snip Run (Visual) | f 
-Snip Run Operator | <leader>f 
-Snip Run | <leader>ff 
 
 ## Which-Key
 Open Which Key | <leader>.
