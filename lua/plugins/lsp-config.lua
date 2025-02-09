@@ -34,6 +34,17 @@ return {
                 capabilities = capabilities,
             })
 
+            lspconfig.clangd.setup({
+                cmd = {
+                    "clangd",
+                    "--background-index",
+                    "--clang-tidy",
+                    "--all-scopes-completion",
+                    "--limit-results=0",
+                },
+                capabilities = capabilities,
+            })
+
             -- Godot --
             local gdscript_config = {
                 capabilities = capabilities,
