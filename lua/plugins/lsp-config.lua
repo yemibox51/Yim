@@ -33,6 +33,9 @@ return {
             lspconfig.ts_ls.setup({
                 capabilities = capabilities,
             })
+            lspconfig.jdtls.setup({
+                capabilities = capabilities
+            })
 
             lspconfig.clangd.setup({
                 cmd = {
