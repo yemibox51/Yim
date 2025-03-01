@@ -43,3 +43,6 @@ if gdproject then
         vim.fn.serverstart("./godothost")
     end
 end
+
+-- Copilot --
+vim.keymap.set('n', '<leader>cc', ':CopilotChatToggle<CR>', {})
