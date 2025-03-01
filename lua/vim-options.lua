@@ -46,3 +46,6 @@ end
 
 -- Copilot --
 vim.keymap.set('n', '<leader>cc', ':CopilotChatToggle<CR>', {})
+
+-- Auto-sessions --
+vim.keymap.set('n', '<leader>S', ':SessionSearch<CR>', {})
