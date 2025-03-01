@@ -12,7 +12,8 @@ return {
                 ensure_installed = {
                     "lua_ls",
                     "pyright",
-                }
+                },
+                auto_install = true,
             })
         end
     },
