@@ -57,3 +57,6 @@ Open Which Key | <leader>.
 
 ## Todo-Commnets
 Open Todo Telescope | <leader>tt
+
+## Neovim
+View error message logs | :messages
