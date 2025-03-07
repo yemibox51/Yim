@@ -22,6 +22,9 @@ vim.keymap.set({ 'n', 'v' }, '<leader>D', '"+D', {}) -- Cut Line
 -- vim.keymap.set('n', '<leader>f', ':.,', {})  -- Replace to $/n in File
 vim.keymap.set('n', '<leader>F', ':%s/', {}) -- Replace All in File
 
+-- Jump List --
+vim.keymap.set('n', '<C-i>', '<C-i>', {noremap = true, silent = true})
+
 -- Tabs --
 vim.keymap.set('n', '<leader>T', ':tabnew<CR>', {})
 vim.api.nvim_set_keymap('n', '<Tab>', ':tabnext<CR>', { noremap = true, silent = true })
