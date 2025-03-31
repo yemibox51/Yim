@@ -35,7 +35,10 @@ return {
                 capabilities = capabilities,
             })
             lspconfig.jdtls.setup({
-                capabilities = capabilities
+                -- Make sure to export this for lombok to work
+                -- You will need to confirm where the lombok.jar file is
+                -- export JDTLS_JVM_ARGS="-javaagent:$HOME/.local/share/nvim/mason/share/lombok-nightly/lombok.jar"
+                capabilities = capabilities,
             })
 
             lspconfig.clangd.setup({
