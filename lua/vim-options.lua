@@ -44,8 +44,5 @@ if gdproject then
     vim.fn.serverstart("127.0.0.1:6004")
 end
 
--- Copilot --
-vim.keymap.set('n', '<leader>cc', ':CopilotChatToggle<CR>', {})
-
 -- Auto-sessions --
 vim.keymap.set('n', '<leader>S', ':SessionSearch<CR>', {})
