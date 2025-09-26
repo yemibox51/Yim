@@ -83,6 +83,45 @@ Finally, to use nvim
 ## Debugger
 Will have to manually `:MasonInstall <debug_adapter>`
 
+## Plugins
+- [Alpha-nvim](https://github.com/goolord/alpha-nvim) - Fast and customizable greeter/dashboard for Neovim
+- [Auto-session](https://github.com/rmagatti/auto-session) - Automatic session management with directory awareness
+- [Catppuccin](https://github.com/catppuccin/nvim) - Soothing pastel theme for Neovim
+- [Cheatsheet.nvim](https://github.com/sudormrfbin/cheatsheet.nvim) - Searchable cheatsheet for Neovim keybindings
+- [Comment.nvim](https://github.com/numToStr/Comment.nvim) - Smart and powerful comment toggler
+- [friendly-snippets](https://github.com/rafamadriz/friendly-snippets) - Collection of snippets for various languages
+- [GitHub Theme](https://github.com/projekt0n/github-nvim-theme) - GitHub's Neovim themes collection
+- [GitSigns](https://github.com/lewis6991/gitsigns.nvim) - Git integration with signs, blame, and diff highlighting
+- [hrsh7th/cmp-nvim-lsp](https://github.com/hrsh7th/cmp-nvim-lsp) - LSP source for nvim-cmp
+- [hrsh7th/nvim-cmp](https://github.com/hrsh7th/nvim-cmp) - Completion engine with multiple sources
+- [Indent-blankline](https://github.com/lukas-reineke/indent-blankline.nvim) - Indentation guides and scope highlighting
+- [Lazy.nvim](https://github.com/folke/lazy.nvim) - Modern plugin manager with lazy loading
+- [LazyGit](https://github.com/kdheepak/lazygit.nvim) - Terminal UI for Git commands integration
+- [LuaSnip](https://github.com/L3MON4D3/LuaSnip) - Snippet engine written in Lua
+- [Lualine](https://github.com/nvim-lualine/lualine.nvim) - Fast and configurable statusline
+- [Mason](https://github.com/williamboman/mason.nvim) - Package manager for LSP servers, linters, and formaters
+- [Mason LSPConfig](https://github.com/williamboman/mason-lspconfig.nvim) - Bridge between mason.nvim and lspconfig
+- [Neo-tree](https://github.com/nvim-neo-tree/neo-tree.nvim) - File explorer with Git integration and modern UI
+- [Noice](https://github.com/folke/noice.nvim) - Enhanced UI for messages, cmdline and popupmenu
+- [None-ls](https://github.com/nvimtools/none-ls.nvim) - Language server for formatting and diagnostics
+- [nvim-autopairs](https://github.com/windwp/nvim-autopairs) - Automatic closing of brackets, quotes, and tags
+- [nvim-dap](https://github.com/mfussenegger/nvim-dap) - Debug Adapter Protocol client for debugging
+- [nvim-dap-python](https://github.com/mfussenegger/nvim-dap-python) - Python debugging extension for nvim-dap
+- [nvim-dap-ui](https://github.com/rcarriga/nvim-dap-ui) - UI for nvim-dap with debugging interface
+- [nvim-dap-virtual-text](https://github.com/theHamsta/nvim-dap-virtual-text) - Virtual text support for nvim-dap
+- [LSPConfig](https://github.com/neovim/nvim-lspconfig) - Quickstart configurations for built-in LSP client
+- [nvim-ts-autotag](https://github.com/windwp/nvim-ts-autotag) - Auto close and rename HTML/XML tags
+- [Plenary.nvim](https://github.com/nvim-lua/plenary.nvim) - Lua utility functions library
+- [Render-markdown](https://github.com/MeanderingProgrammer/render-markdown.nvim) - Markdown rendering with treesitter
+- [Symbols-outline](https://github.com/simrat39/symbols-outline.nvim) - Tree-like view for symbols using LSP
+- [Telescope](https://github.com/nvim-telescope/telescope.nvim) - Fuzzy finder for files, buffers, and more
+- [Telescope UI Select](https://github.com/nvim-telescope/telescope-ui-select.nvim) - Telescope interface for vim.ui.select
+- [Todo-comments](https://github.com/folke/todo-comments.nvim) - Highlight and search for todo comments
+- [Treesitter](https://github.com/nvim-treesitter/nvim-treesitter) - Syntax highlighting and code parsing
+- [Vim-godot](https://github.com/habamax/vim-godot) - Godot engine support and integration
+- [Which-key](https://github.com/folke/which-key.nvim) - Popup that shows keybindings as you type
+- [nvim-web-devicons](https://github.com/nvim-tree/nvim-web-devicons) - File type icons for Neovim
+
 ## Pictures
 ![image](https://github.com/yemibox51/Yim/assets/19742642/3a0a1fa4-67a8-45ca-a498-19a9871e0e2d)
 
