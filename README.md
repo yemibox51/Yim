@@ -121,6 +121,7 @@ Will have to manually `:MasonInstall <debug_adapter>`
 - [Vim-godot](https://github.com/habamax/vim-godot) - Godot engine support and integration
 - [Which-key](https://github.com/folke/which-key.nvim) - Popup that shows keybindings as you type
 - [nvim-web-devicons](https://github.com/nvim-tree/nvim-web-devicons) - File type icons for Neovim
+- [toggleterm](https://github.com/akinsho/toggleterm.nvim) - Terminal
 
 ## Pictures
 ![image](https://github.com/yemibox51/Yim/assets/19742642/3a0a1fa4-67a8-45ca-a498-19a9871e0e2d)
