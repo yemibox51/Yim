@@ -112,6 +112,7 @@ Will have to manually `:MasonInstall <debug_adapter>`
 - [LSPConfig](https://github.com/neovim/nvim-lspconfig) - Quickstart configurations for built-in LSP client
 - [nvim-ts-autotag](https://github.com/windwp/nvim-ts-autotag) - Auto close and rename HTML/XML tags
 - [opencode.nvim](https://github.com/NickvanDyke/opencode.nvim) - AI-powered coding assistant for Neovim
+- [gemini-cli.nvim](https://github.com/marcinjahn/gemini-cli.nvim) - Seamlessly integrate Gemini CLI with Neovim for an enhanced AI-assisted coding experience!
 - [Plenary.nvim](https://github.com/nvim-lua/plenary.nvim) - Lua utility functions library
 - [Render-markdown](https://github.com/MeanderingProgrammer/render-markdown.nvim) - Markdown rendering with treesitter
 - [Symbols-outline](https://github.com/simrat39/symbols-outline.nvim) - Tree-like view for symbols using LSP
