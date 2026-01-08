@@ -11,12 +11,13 @@ return {
                     }
                 },
             }
-			local builtin = require("telescope.builtin")
-			vim.keymap.set('n', '<C-p>', builtin.find_files, {})
-			vim.keymap.set('n', '<leader>fg', builtin.live_grep, {})
-			vim.keymap.set('n', '<leader>o', builtin.lsp_document_symbols, {})
+		local builtin = require("telescope.builtin")
+		vim.keymap.set('n', '<C-p>', builtin.find_files, {})
+		vim.keymap.set('n', '<leader>fg', builtin.live_grep, {})
+		vim.keymap.set('n', '<leader>o', builtin.lsp_document_symbols, {})
             vim.keymap.set('n', '<leader>O', function() builtin.lsp_document_symbols({ symbols = { 'function' } }) end, {})
-			vim.keymap.set('n', '<leader>m', builtin.marks, {})
+		vim.keymap.set('n', '<leader>m', builtin.marks, {})
+		vim.keymap.set('n', '<leader>tT', builtin.colorscheme, {})
 		end
 	},
 	{
