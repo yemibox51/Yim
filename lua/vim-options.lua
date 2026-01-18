@@ -46,3 +46,9 @@ end
 
 -- Auto-sessions --
 vim.keymap.set('n', '<leader>S', ':SessionSearch<CR>', {})
+
+-- Auto-refresh files when changed externally --
+vim.opt.autoread = true
+vim.api.nvim_create_autocmd({ "FocusGained", "BufEnter" }, {
+    command = "checktime",
+})
