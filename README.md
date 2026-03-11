@@ -18,6 +18,7 @@ Invoke-RestMethod -Uri https://get.scoop.sh | Invoke-Expression
 brew install neovim # >= 0.10.0
 brew install ripgrep
 brew install node
+brew install git-delta
 
 mkdir -p ~/.config/nvim && touch ~/.config/nvim/init.lua
 
@@ -85,10 +86,12 @@ Will have to manually `:MasonInstall <debug_adapter>`
 
 ## Plugins
 - [Alpha-nvim](https://github.com/goolord/alpha-nvim) - Fast and customizable greeter/dashboard for Neovim
+- [Auto-dark-mode](https://github.com/f-person/auto-dark-mode.nvim) - Automatically switches colorscheme based on system dark/light mode
 - [Auto-session](https://github.com/rmagatti/auto-session) - Automatic session management with directory awareness
 - [Catppuccin](https://github.com/catppuccin/nvim) - Soothing pastel theme for Neovim
 - [Cheatsheet.nvim](https://github.com/sudormrfbin/cheatsheet.nvim) - Searchable cheatsheet for Neovim keybindings
 - [Comment.nvim](https://github.com/numToStr/Comment.nvim) - Smart and powerful comment toggler
+- [Deltaview](https://github.com/kokusenz/deltaview.nvim) - Inline diff viewer using delta (git-delta) with two-way cursor tracking
 - [friendly-snippets](https://github.com/rafamadriz/friendly-snippets) - Collection of snippets for various languages
 - [GitHub Theme](https://github.com/projekt0n/github-nvim-theme) - GitHub's Neovim themes collection
 - [GitSigns](https://github.com/lewis6991/gitsigns.nvim) - Git integration with signs, blame, and diff highlighting
