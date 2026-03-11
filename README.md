@@ -91,7 +91,7 @@ Will have to manually `:MasonInstall <debug_adapter>`
 - [Catppuccin](https://github.com/catppuccin/nvim) - Soothing pastel theme for Neovim
 - [Cheatsheet.nvim](https://github.com/sudormrfbin/cheatsheet.nvim) - Searchable cheatsheet for Neovim keybindings
 - [Comment.nvim](https://github.com/numToStr/Comment.nvim) - Smart and powerful comment toggler
-- [Deltaview](https://github.com/kokusenz/deltaview.nvim) - Inline diff viewer using delta (git-delta) with two-way cursor tracking
+- [Codediff](https://github.com/esmuellert/codediff.nvim) - VSCode-style diff rendering with two-tier highlighting (line + character level) in side-by-side and inline layouts
 - [friendly-snippets](https://github.com/rafamadriz/friendly-snippets) - Collection of snippets for various languages
 - [GitHub Theme](https://github.com/projekt0n/github-nvim-theme) - GitHub's Neovim themes collection
 - [GitSigns](https://github.com/lewis6991/gitsigns.nvim) - Git integration with signs, blame, and diff highlighting

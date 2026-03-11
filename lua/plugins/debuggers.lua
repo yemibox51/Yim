@@ -121,7 +121,7 @@ return {
             vim.keymap.set('n', '<Leader>lp',
                 function() dap.set_breakpoint(nil, nil, vim.fn.input('Log point message: ')) end)
             vim.keymap.set('n', '<Leader>dr', function() dap.repl.open() end)
-            -- vim.keymap.set('n', '<Leader>dl', function() dap.run_last() end) -- Disabled for git-delta keybindings
+            vim.keymap.set('n', '<Leader>dl', function() dap.run_last() end)
             vim.keymap.set('n', '<Leader>gb', function() dap.run_to_cursor() end)
 
             -- Keymaps from :help dap-mappings --
