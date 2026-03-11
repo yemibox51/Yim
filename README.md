@@ -117,6 +117,7 @@ Will have to manually `:MasonInstall <debug_adapter>`
 - [opencode.nvim](https://github.com/NickvanDyke/opencode.nvim) - AI-powered coding assistant for Neovim
 - [gemini-cli.nvim](https://github.com/marcinjahn/gemini-cli.nvim) - Seamlessly integrate Gemini CLI with Neovim for an enhanced AI-assisted coding experience!
 - [Plenary.nvim](https://github.com/nvim-lua/plenary.nvim) - Lua utility functions library
+- [Markdown-preview](https://github.com/iamcco/markdown-preview.nvim) - Live markdown preview in the browser with sync scrolling (`<leader>mp` to toggle)
 - [Render-markdown](https://github.com/MeanderingProgrammer/render-markdown.nvim) - Markdown rendering with treesitter
 - [Symbols-outline](https://github.com/simrat39/symbols-outline.nvim) - Tree-like view for symbols using LSP
 - [Telescope](https://github.com/nvim-telescope/telescope.nvim) - Fuzzy finder for files, buffers, and more
