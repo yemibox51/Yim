@@ -108,6 +108,7 @@ Will have to manually `:MasonInstall <debug_adapter>`
 - [Noice](https://github.com/folke/noice.nvim) - Enhanced UI for messages, cmdline and popupmenu
 - [None-ls](https://github.com/nvimtools/none-ls.nvim) - Language server for formatting and diagnostics
 - [nvim-autopairs](https://github.com/windwp/nvim-autopairs) - Automatic closing of brackets, quotes, and tags
+- [nvim-bqf](https://github.com/kevinhwang91/nvim-bqf) - Better quickfix window in Neovim
 - [nvim-dap](https://github.com/mfussenegger/nvim-dap) - Debug Adapter Protocol client for debugging
 - [nvim-dap-python](https://github.com/mfussenegger/nvim-dap-python) - Python debugging extension for nvim-dap
 - [nvim-dap-ui](https://github.com/rcarriga/nvim-dap-ui) - UI for nvim-dap with debugging interface
@@ -117,6 +118,8 @@ Will have to manually `:MasonInstall <debug_adapter>`
 - [opencode.nvim](https://github.com/NickvanDyke/opencode.nvim) - AI-powered coding assistant for Neovim
 - [gemini-cli.nvim](https://github.com/marcinjahn/gemini-cli.nvim) - Seamlessly integrate Gemini CLI with Neovim for an enhanced AI-assisted coding experience!
 - [Plenary.nvim](https://github.com/nvim-lua/plenary.nvim) - Lua utility functions library
+- [Project.nvim](https://github.com/ahmedkhalf/project.nvim) - Project management for Neovim
+- [Quicker.nvim](https://github.com/stevearc/quicker.nvim) - Fast and light quickfix window enhancement
 - [Markdown-preview](https://github.com/iamcco/markdown-preview.nvim) - Live markdown preview in the browser with sync scrolling (`<leader>mp` to toggle)
 - [Render-markdown](https://github.com/MeanderingProgrammer/render-markdown.nvim) - Markdown rendering with treesitter
 - [Symbols-outline](https://github.com/simrat39/symbols-outline.nvim) - Tree-like view for symbols using LSP
