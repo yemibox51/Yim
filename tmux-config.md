@@ -34,6 +34,10 @@ setw -g window-status-bell-style "fg=yellow bg=#{COLOR_ACCENT} bold"
 # Keybindings
 # Reload config
 bind R source-file ~/.tmux.conf \; display-message "Config reloaded"
+
+# Extra controls
+# Mouse support (scroll + drag-to-copy)
+set -g mouse on
 ```
 
 Can restart Tmux with new config
