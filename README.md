@@ -115,12 +115,11 @@ Will have to manually `:MasonInstall <debug_adapter>`
 - [nvim-dap-virtual-text](https://github.com/theHamsta/nvim-dap-virtual-text) - Virtual text support for nvim-dap
 - [LSPConfig](https://github.com/neovim/nvim-lspconfig) - Quickstart configurations for built-in LSP client
 - [nvim-ts-autotag](https://github.com/windwp/nvim-ts-autotag) - Auto close and rename HTML/XML tags
-- [opencode.nvim](https://github.com/NickvanDyke/opencode.nvim) - AI-powered coding assistant for Neovim
-- [gemini-cli.nvim](https://github.com/marcinjahn/gemini-cli.nvim) - Seamlessly integrate Gemini CLI with Neovim for an enhanced AI-assisted coding experience!
 - [Plenary.nvim](https://github.com/nvim-lua/plenary.nvim) - Lua utility functions library
 - [Quicker.nvim](https://github.com/stevearc/quicker.nvim) - Fast and light quickfix window enhancement
 - [Markdown-preview](https://github.com/iamcco/markdown-preview.nvim) - Live markdown preview in the browser with sync scrolling (`<leader>mp` to toggle)
 - [Render-markdown](https://github.com/MeanderingProgrammer/render-markdown.nvim) - Markdown rendering with treesitter
+- [Sidekick](https://github.com/folke/sidekick.nvim) - AI coding assistant with CLI interface for code edits and suggestions
 - [Symbols-outline](https://github.com/simrat39/symbols-outline.nvim) - Tree-like view for symbols using LSP
 - [Telescope](https://github.com/nvim-telescope/telescope.nvim) - Fuzzy finder for files, buffers, and more
 - [Telescope UI Select](https://github.com/nvim-telescope/telescope-ui-select.nvim) - Telescope interface for vim.ui.select
