@@ -5,10 +5,11 @@ vim.cmd("set expandtab")
 vim.g.mapleader = " "
 
 -- Resize Panes Faster --
-vim.keymap.set('n', '<C-j>', ':resize +2<CR>', {})
-vim.keymap.set('n', '<C-k>', ':resize -2<CR>', {})
-vim.keymap.set('n', '<C-h>', ':vertical resize +2<CR>', {})
-vim.keymap.set('n', '<C-l>', ':vertical resize -2<CR>', {})
+-- Make sure to adjust iTerm Settings: Profile > Keys > Esc+
+vim.keymap.set('n', '<A-j>', ':resize -2<CR>', {})
+vim.keymap.set('n', '<A-k>', ':resize +2<CR>', {})
+vim.keymap.set('n', '<A-h>', ':vertical resize +2<CR>', {})
+vim.keymap.set('n', '<A-l>', ':vertical resize -2<CR>', {})
 
 -- Copy & Paste to Clipboard --
 vim.keymap.set({ 'n', 'v' }, '<leader>y', '"+y', {}) -- Copy Cursor
