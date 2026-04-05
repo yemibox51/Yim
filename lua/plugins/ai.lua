@@ -59,5 +59,16 @@ return {
           desc = "Sidekick Select Prompt",
         },
       },
+    },
+    { -- Code completion
+      "monkoose/neocodeium",
+      event = "VeryLazy",
+      config = function()
+        local neocodeium = require("neocodeium")
+        neocodeium.setup()
+        vim.keymap.set("i", "<A-f>", neocodeium.accept)
+        vim.keymap.set("i", "<A-e>", neocodeium.cycle_or_complete)
+        vim.keymap.set("i", "<A-c>", neocodeium.clear)
+      end,
     }
 }
