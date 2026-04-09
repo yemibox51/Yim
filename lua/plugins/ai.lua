@@ -60,15 +60,12 @@ return {
         },
       },
     },
-    { -- Code completion
-      "monkoose/neocodeium",
-      event = "VeryLazy",
+    { -- GitHub Copilot code completion
+      "github/copilot.vim",
       config = function()
-        local neocodeium = require("neocodeium")
-        neocodeium.setup()
-        vim.keymap.set("i", "<A-f>", neocodeium.accept)
-        vim.keymap.set("i", "<A-e>", neocodeium.cycle_or_complete)
-        vim.keymap.set("i", "<A-c>", neocodeium.clear)
+        vim.keymap.set("i", "<A-f>", 'copilot#Accept("\\<CR>")', { expr = true, noremap = true })
+        vim.keymap.set("i", "<A-e>", '<Plug>(copilot-next)', { noremap = true })
+        vim.keymap.set("i", "<A-c>", '<Plug>(copilot-dismiss)', { noremap = true })
       end,
     }
 }
