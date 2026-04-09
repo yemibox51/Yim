@@ -38,6 +38,9 @@ bind R source-file ~/.tmux.conf \; display-message "Config reloaded"
 # Extra controls
 # Mouse support (scroll + drag-to-copy)
 set -g mouse on
+
+# Allows copy and paste
+set -s copy-command 'pbcopy -b'  # Use 'pbcopy' for macOS, 'clip.exe' for WSL
 ```
 
 Can restart Tmux with new config
