@@ -19,6 +19,7 @@ brew install neovim # >= 0.10.0
 brew install ripgrep
 brew install node
 brew install git-delta
+brew install tmux
 
 mkdir -p ~/.config/nvim && touch ~/.config/nvim/init.lua
 
@@ -80,6 +81,15 @@ winget install nmap
 To make windows terminal look better, use Oh-my-pop
 
 Finally, to use nvim
+
+## Tmux
+Session persistence via [tmux-resurrect](https://github.com/tmux-plugins/tmux-resurrect) + [tmux-continuum](https://github.com/tmux-plugins/tmux-continuum). Full config and setup: [tmux-config.md](./tmux-config.md).
+
+Quick reference:
+- Save sessions: `Ctrl-b` `Ctrl-s`
+- Restore sessions: `Ctrl-b` `Ctrl-r`
+- Auto-restore on tmux start: on
+- Auto-save every 15 min: off (uncomment `@continuum-save-interval` in `~/.tmux.conf` to enable)
 
 ## Debugger
 Will have to manually `:MasonInstall <debug_adapter>`
