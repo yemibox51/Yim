@@ -22,20 +22,12 @@ return {
         config = function()
             local capabilities = require("cmp_nvim_lsp").default_capabilities()
 
-            local lspconfig = require("lspconfig")
-
             -- Language Servers --
-            lspconfig.lua_ls.setup({
-                capabilities = capabilities,
-            })
-            lspconfig.pyright.setup({
-                capabilities = capabilities,
-            })
-            lspconfig.ts_ls.setup({
-                capabilities = capabilities,
-            })
+            vim.lsp.config("lua_ls", { capabilities = capabilities })
+            vim.lsp.config("pyright", { capabilities = capabilities })
+            vim.lsp.config("ts_ls", { capabilities = capabilities })
 
-            lspconfig.clangd.setup({
+            vim.lsp.config("clangd", {
                 cmd = {
                     "clangd",
                     "--background-index",
@@ -51,27 +43,24 @@ return {
                 capabilities = capabilities,
                 settings = {},
             }
-            if vim.fn.has 'win32' == 1 then
+            if vim.fn.has("win32") == 1 then
                 -- Requires nmap installed ('winget install nmap')
-                gdscript_config['cmd'] = {'ncat', 'localhost', os.getenv 'GDScript_Port' or '6005'}
+                gdscript_config.cmd = { "ncat", "localhost", os.getenv("GDScript_Port") or "6005" }
             end
-            if lspconfig.gdscript then
-                lspconfig.gdscript.setup(gdscript_config)
-            end
+            vim.lsp.config("gdscript", gdscript_config)
 
+            vim.lsp.config("gopls", { capabilities = capabilities })
+            vim.lsp.config("buf_ls", { capabilities = capabilities })
 
-            if lspconfig.gopls then
-                lspconfig.gopls.setup({
-                    capabilities = capabilities,
-                })
-            end
-
-            -- Protobuf --
-            if lspconfig.buf_ls then
-                lspconfig.buf_ls.setup({
-                    capabilities = capabilities
-                })
-            end
+            vim.lsp.enable({
+                "lua_ls",
+                "pyright",
+                "ts_ls",
+                "clangd",
+                "gdscript",
+                "gopls",
+                "buf_ls",
+            })
 
             -- Keymaps --
             vim.keymap.set('n', 'gD', vim.lsp.buf.declaration, {})
