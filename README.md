@@ -19,6 +19,7 @@ brew install neovim # >= 0.10.0
 brew install ripgrep
 brew install node
 brew install git-delta
+brew install gh
 brew install tmux
 
 mkdir -p ~/.config/nvim && touch ~/.config/nvim/init.lua
@@ -117,6 +118,7 @@ Will have to manually `:MasonInstall <debug_adapter>`
 - [Neo-tree](https://github.com/nvim-neo-tree/neo-tree.nvim) - File explorer with Git integration and modern UI
 - [Noice](https://github.com/folke/noice.nvim) - Enhanced UI for messages, cmdline and popupmenu
 - [None-ls](https://github.com/nvimtools/none-ls.nvim) - Language server for formatting and diagnostics
+- [Octo.nvim](https://github.com/pwntester/octo.nvim) - Edit and review GitHub issues and pull requests from Neovim (`<leader>oi` issues, `<leader>op` PRs, `<leader>od` discussions, `<leader>on` notifications, `<leader>os` search; run `:checkhealth octo` after setup)
 - [nvim-autopairs](https://github.com/windwp/nvim-autopairs) - Automatic closing of brackets, quotes, and tags
 - [nvim-bqf](https://github.com/kevinhwang91/nvim-bqf) - Better quickfix window in Neovim
 - [nvim-dap](https://github.com/mfussenegger/nvim-dap) - Debug Adapter Protocol client for debugging
