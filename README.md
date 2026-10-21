@@ -25,6 +25,9 @@ brew install tmux
 mkdir -p ~/.config/nvim && touch ~/.config/nvim/init.lua
 
 curl https://sh.rustup.rs -sSf | sh # Install Rust and Cargo
+
+# For Kotlin
+brew install JetBrains/utils/kotlin-lsp
 ```
 
 ### Linux/WSL

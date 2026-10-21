@@ -51,6 +51,7 @@ return {
 
             vim.lsp.config("gopls", { capabilities = capabilities })
             vim.lsp.config("buf_ls", { capabilities = capabilities })
+            vim.lsp.config("kotlin_lsp", { cmd = { "kotlin-lsp", "--stdio" }, capabilities = capabilities })
 
             vim.lsp.enable({
                 "lua_ls",
@@ -60,6 +61,7 @@ return {
                 "gdscript",
                 "gopls",
                 "buf_ls",
+                "kotlin_lsp",
             })
 
             -- Keymaps --
